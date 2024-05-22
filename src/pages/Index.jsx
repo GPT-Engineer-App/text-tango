@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Container, VStack, HStack, Input, Button, Text, Avatar, IconButton } from "@chakra-ui/react";
-import BackgroundShapes from "../components/BackgroundShapes.jsx";
+
 import { FaPaperPlane, FaUserCircle } from "react-icons/fa";
 
 const Index = () => {
@@ -15,8 +15,7 @@ const Index = () => {
   };
 
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="gray.200" position="relative">
-      <BackgroundShapes />
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4} width="100%">
         <Box bg="gray.100" w="100%" p={4} borderRadius="md" boxShadow="md" overflowY="auto" height="70vh">
           {messages.map((message, index) => (
