@@ -19,11 +19,10 @@ const Index = () => {
         <Box bg="gray.100" w="100%" p={4} borderRadius="md" boxShadow="md" overflowY="auto" height="70vh">
           {messages.map((message, index) => (
             <HStack key={index} spacing={3} alignSelf={message.sender === "You" ? "flex-end" : "flex-start"}>
-              {message.sender !== "You" && <Avatar icon={<FaUserCircle />} />}
+              <Avatar icon={<FaUserCircle />} />
               <Box bg={message.sender === "You" ? "blue.100" : "green.100"} p={3} borderRadius="md">
                 <Text>{message.text}</Text>
               </Box>
-              {message.sender === "You" && <Avatar icon={<FaUserCircle />} />}
             </HStack>
           ))}
         </Box>
