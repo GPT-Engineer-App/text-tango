@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4} width="100%">
-        <Box bg="gray.800" w="100%" p={4} borderRadius="md" boxShadow="md" overflowY="auto" height="70vh">
+        <Box bg="#3a4750" w="100%" p={4} borderRadius="md" boxShadow="md" overflowY="auto" height="70vh">
           {messages.map((message, index) => (
             <HStack key={index} spacing={3} alignSelf={message.sender === "You" ? "flex-end" : "flex-start"} mb={4}>
               <Avatar icon={<FaUserCircle />} boxSize="30px" />
